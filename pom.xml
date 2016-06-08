@@ -502,6 +502,17 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.3.5.v20151012</version>
+				<configuration>
+                    <httpConnector>
+                        <port>8084</port>
+                    </httpConnector>
+                    <stopKey>stop</stopKey>
+                    <stopPort>4501</stopPort>
+                    <webAppConfig>
+                        <contextPath>/</contextPath>
+                    </webAppConfig>
+                    <scanIntervalSeconds>1</scanIntervalSeconds>
+                </configuration>
 			</plugin>
         </plugins>
     </build>

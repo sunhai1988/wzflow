@@ -7,6 +7,7 @@ import org.nutz.dao.entity.annotation.*;
 * @time   2014-03-26 14:25:53
 */
 @Table("sys_dict")
+@TableIndexes({@Index(name = "INDEX_DKEY", fields = {"dkey"}, unique = false)})
 public class Sys_dict 
 {
 	@Column

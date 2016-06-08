@@ -1,0 +1,100 @@
+<div class="publish">
+        <div class="head">
+          <h3>创建产品/项目</h3>
+          <p>提交你参与的产品/项目</p>
+        </div>
+        <form class="new_product" id="new_product" enctype="multipart/form-data" action="/ware" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="fAZapdbT4KpVNzcwLnZZtpBz30RAFT191gIzjZ2P5PHjcHGyC4N+93n4dzUO5bMLOV7sQXSve939iWVKlcrilA==">
+  <div class="form-wrap">
+    <div class="form-group mb-lg product-name">
+  <label for="product_name">产品/项目名称 <em>* 必填</em></label>
+  <input class="form-control product-select ui-autocomplete-input" placeholder="填写你要分享的产品/项目的名称" required="required" type="text" name="product[name]" id="product_name" autocomplete="off">
+</div>
+
+<div class="form-group mb-lg form-category">
+  <label for="">
+    产品/项目类别 <em>* 必填</em>
+  </label>
+  <div class="form-control product-form-element">
+    <div id="selected-ProductCategory" class="resource-group">
+  <a class="select_btn" href="/resource_chooser?resource=ProductCategory&amp;container_id=selected-ProductCategory&amp;value=" data-remote="true">
+    
+    <span id="btn_click_to_choose" class="">点此选择</span>
+  </a>
+  <input type="hidden" id="value_holder" name="product[tag_list]" value="">
+</div>
+
+  </div>
+</div>
+
+<div class="form-group mb-lg form-intro">
+  <label for="product_intro">产品/项目一句话描述 <em>* 必填</em></label>
+  <input class="form-control product-form-element" placeholder="用一句话来描述该产品/项目亮点" required="required" type="text" name="product[intro]" id="product_intro">
+</div>
+<div class="form-group mb-lg form-description">
+  <label for="product_description">产品/项目详细描述 <em>* 必填</em></label>
+  <textarea class="form-control product-form-element" placeholder="你可以从以下方面来描述你的产品/项目：
+- 产品/项目细分领域
+- 产品/项目用途
+- 产品/项目服务对象
+- 产品/项目前景
+" rows="10" required="required" name="product[description]" id="product_description"></textarea>
+</div>
+
+<div class="form-group mb-lg product-images">
+  <label>
+    产品/项目图片 <em>* 必填</em>
+  </label>
+  <div class="product-form-element input-images">
+    <table id="images" class="table">
+          </table>
+    <a data-target="#images" class="btn btn-default add_nested_fields" data-association="images" data-blueprint-id="images_fields_blueprint" href="javascript:void(0)">添加图片</a>
+  </div>
+</div>
+
+<div class="form-group mb-lg form-url">
+  <label for="product_url">产品/项目链接</label>
+  <div class="product-form-element input-group">
+    <span class="input-group-addon">http://</span>
+    <input class="form-control" placeholder="填写产品官网链接或相关链接" type="text" name="product[url]" id="product_url">
+  </div>
+</div>
+
+<div class="form-group mb-lg product-if-public-radio-button">
+  <label>是否公开</label>
+    <div class="product-form-element">
+      <label for="product_if_public_yes">
+          <input type="radio" value="true" checked="checked" name="product[if_public]" id="product_if_public_true">
+          公开
+</label>      <label for="product_if_public_no">
+          <input type="radio" value="false" name="product[if_public]" id="product_if_public_false">
+          仅深圳湾管理员可见
+</label>    </div>
+</div>
+
+
+    
+
+    <div class="form-foot form-group">
+      <div class="operate product-operate">
+        <input type="submit" name="commit" value="提交" class="btn btn-primary product-form-element">
+        <a class="btn btn-default" href="/ware">取消</a>
+      </div>
+    </div>
+  </div>
+<div id="images_fields_blueprint" style="display: none" data-blueprint="
+        <tr class=&quot;fields&quot;>
+          <td>
+            <div class=&quot;drag&quot;>
+              <img src=&quot;&quot; />
+                <i class=&quot;icon icon-picture&quot;></i>
+                <a href=&quot;#&quot;>选择要上传的图片</a>
+              <input type=&quot;file&quot; name=&quot;product[images_attributes][new_images][file]&quot; id=&quot;product_images_attributes_new_images_file&quot; />
+            </div>
+            <input type=&quot;hidden&quot; name=&quot;product[images_attributes][new_images][file_cache]&quot; id=&quot;product_images_attributes_new_images_file_cache&quot; />
+          </td>
+          <td style=&quot;vertical-align: middle; width: 60px;&quot;>
+            <input type=&quot;hidden&quot; value=&quot;false&quot; name=&quot;product[images_attributes][new_images][_destroy]&quot; id=&quot;product_images_attributes_new_images__destroy&quot; /><a class=&quot;btn btn-danger remove_nested_fields&quot; data-association=&quot;images&quot; href=&quot;javascript:void(0)&quot;><i class=&quot;fa fa-trash&quot;></i></a>
+          </td>
+        </tr>
+"></div></form>
+        </div>

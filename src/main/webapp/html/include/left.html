@@ -1,0 +1,47 @@
+<div class="col-md-3 media-tag">
+	<ul class="nav nav-pills nav-stacked">
+		<li class="divider "><a href="/user_center"> <i
+				class="icon fa fa-user fa-lg fa-fw"></i>个人中心
+		</a></li>
+
+		<li class=""><a id="homepage_management_menu" href="#"> <i
+				class="icon fa fa-home fa-lg fa-fw"></i>个人主页管理
+		</a>
+			<ul class="nav nav-pills nav-stacked submenu">
+				<li class=""><a href="#" ng-click="selectionDiv('baseInfo');">
+						<i class="icon fa fa-file fa-lg fa-fw"></i>我的基本信息
+				</a></li>
+				<li class=""><a href="#" ng-click="selectionDiv('intr');"> <i
+						class="icon fa fa-tags fa-lg fa-fw"></i>我的兴趣领域
+				</a></li>
+
+				<li class=""><a href="#" ng-click="selectionDiv('product');">
+						<i class="icon fa fa-cubes fa-lg fa-fw"></i>我的产品/项目
+				</a></li>
+				<li class=""><a href="#" ng-click="selectionDiv('service');">
+						<i class="icon fa fa-shopping-cart fa-lg fa-fw"></i>我的资源/服务
+				</a></li>
+				<li class=""><a href="#" ng-click="selectionDiv('company');">
+						<i class="icon fa fa-building fa-lg fa-fw"></i>我的公司
+				</a></li>
+
+			</ul></li>
+		<li class="" ng-click="selectionDiv('huodong');"><a href="#"> <i
+				class="icon fa fa-calendar-o fa-lg fa-fw"></i>我参加的活动
+		</a></li>
+		<li class="divider " ng-click="selectionDiv('comments');"><a
+			href="#"> <i class="icon fa fa-comments fa-lg fa-fw"></i>我发布的评论
+		</a></li>
+		<li class="divider "><a href="#" class="order"
+			ng-click="selectionDiv('myOrder');"> <i
+				class="icon fa fa-cart-plus fa-lg fa-fw"></i>我的订单
+		</a></li>
+		<li class="notifications divider " ng-click="selectionDiv('tongzhi');"><a
+			href="#"> <i class="icon fa fa-paper-plane fa-lg fa-fw"></i>通知中心
+		</a></li>
+		<li class="divider " ng-click="selectionDiv('sixin');"><a href="#">
+				<i class="icon fa fa-lg fa-paper-plane fa-fw"></i>我的私信
+		</a></li>
+	</ul>
+
+</div>

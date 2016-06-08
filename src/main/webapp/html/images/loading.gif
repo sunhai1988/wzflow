@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>湾社区 - 创客创业第一社区</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=39664090" charset="UTF-8"></script>
+  <link rel="shortcut icon" href="http://7xi85d.com2.z0.glb.qiniucdn.com/assets/favicon-0dc5b19f63d37f0f4f2c26003174e83d.ico" />
+  <link rel="bookmark" href="http://7xi85d.com2.z0.glb.qiniucdn.com/assets/favicon-0dc5b19f63d37f0f4f2c26003174e83d.ico" type="image/x-icon"　/>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <link rel="stylesheet" media="all" href="http://7xi85d.com2.z0.glb.qiniucdn.com/assets/application-2ed807890760d815500cb8422d1a4d00.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="WCbaoGoTbd75yE1a9K/eFlko1EJrcEcaucgOnbBg65XNS5gU4qd4kml2WNBSAVV+ZNdtOey9GSwtivW3azQdfQ==" />
+</head>
+<body class="" style=''>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
+
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img alt="深圳湾" style="width: 42px" src="http://7xi85d.com2.z0.glb.qiniucdn.com/assets/logo-wan-bb454d38d5d3063560dec4c9e9c319a6.png" />
+           <span class="mobile">
+             <img alt="深圳湾" src="http://7xi85d.com2.z0.glb.qiniucdn.com/assets/logo-mobile-1844f16233839c3639def687da1ffbd0.svg" />
+          </span>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="nav navbar-nav">
+          <li class="
+            ">
+            <a href="/featured">精选</a>
+          </li>
+          <li class="">
+            <a href="/events">活动</a>
+          </li>
+          <li class="">
+            <a href="/ware">产品</a>
+          </li>
+          <li class="
+            ">
+            <a href="/topics">广场</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li class="msg">
+            <a href="/login-modal" data-remote="ture">登录</a>
+          </li>
+          <li class="msg">
+            <a href="/register-modal" data-remote="ture">注册</a>
+          </li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+  <div class="media-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 white-box">
+        <h1 class="text-center">404 - 页面没找到</h1>
+        <blockquote>库克不在，湾男在。</blockquote>
+        <p></p>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+            <a href="/" class="btn btn-block btn-primary">返回首页</a>
+          </div>
+          <div class="col-md-4">
+            <a href="/feed_backs/new" class="btn btn-block btn-default">反馈问题</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="footer-link">
+    <div class="container">
+      <p class="pull-left link">
+
+          <a href="/about">关于我们</a>
+          <a href="/joinus">加入我们</a>
+          <a href="/contact">联系我们</a>
+          <a href="/agreement">用户协议</a>
+        <a href="/feed_backs/new">建议反馈</a>
+      </p>
+
+      <p class="pull-right contact">
+        <a href="javascript:;">
+          <i class="icon icon-weixin"></i>
+          <img width="155px" src="http://7xi85d.com2.z0.glb.qiniucdn.com/images/qrcode.jpg" alt="Qrcode" /></a>
+        <a href="http://weibo.com/randswithnn">
+          <i class="icon icon-weibo"></i></a>
+      </p>
+
+    </div>
+  </div>
+  <div class="copyright">Copyright &copy; 2014 深圳湾   粤ICP备14084897号-1</div>
+  <script src="http://7xi85d.com2.z0.glb.qiniucdn.com/assets/application-467a4556d4529b61784c0e0bb8fd0e44.js"></script>
+  <script>
+    $(function(){
+
+      wx.config({
+        appId: 'wx4c29384ef4936740', // 必填，企业号的唯一标识
+        timestamp: 1430728972, // 必填，生成签名的时间戳
+        nonceStr: 'Wm3WZYTPz0wzccnW', // 必填，生成签名的随机串
+        signature: "93e7bce3750272c4108d3b73b07065cebeff4645",// 必填，签名，见附录1
+        jsApiList: ["onMenuShareAppMessage", "onMenuShareTimeline"] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+      });
+
+      wx.ready(function(){
+        // 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
+        wx.onMenuShareAppMessage(window.wxData);
+
+        // 点击分享到朋友圈，会执行下面这个代码
+        wx.onMenuShareTimeline(window.tlData);
+      });
+
+      Messenger.options = {
+        extraClasses: "messenger-fixed messenger-on-bottom",
+        messageDefaults: {
+          hideAfter: 2
+        },
+        theme: 'air'
+      }
+    })
+  </script>
+
+<div class="place-to-user"></div>
+<div class="user-to-registration"></div>
+<script>
+  $(window).bind("load",function() {
+    if(window.location.hash) {
+      document.body.scrollTop = $(window.location.hash).offset().top - 80;
+    }
+  });
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60458052-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+</body>
+</html>
