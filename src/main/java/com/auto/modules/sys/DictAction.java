@@ -56,7 +56,7 @@ public class DictAction extends BaseAction {
     @Ok("raw")
     public boolean add(@Param("..") Sys_dict sys_dict, @Param("treeid") String treeid) {
         Sql sql = Sqls
-                .create("select max(location)+1 from Sys_dict where id like  @id");
+                .create("select max(location)+1 from sys_dict where id like  @id");
         sql.params().set("id", sys_dict.getId() + "_%");
         int location = daoCtl.getIntRowValue(dao, sql);
         sys_dict.setLocation(location);
