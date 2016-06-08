@@ -114,8 +114,8 @@ public class TaskAction extends BaseAction {
     @At
     @Ok("raw")
     public String list(@Param("page") int curPage, @Param("rows") int pageSize, HttpServletRequest req) {
-        Sql sql = Sqls.create("SELECT A.*,B.REALNAME FROM SYS_TASK A,SYS_USER B WHERE A.USER_ID=B.ID ORDER BY A.TASK_ID");
-        Sql sql1 = Sqls.create("SELECT COUNT(*) FROM SYS_TASK A,SYS_USER B WHERE A.USER_ID=B.ID");
+        Sql sql = Sqls.create("SELECT A.*,B.REALNAME FROM SYS_TASK A,sys_user B WHERE A.USER_ID=B.ID ORDER BY A.TASK_ID");
+        Sql sql1 = Sqls.create("SELECT COUNT(*) FROM SYS_TASK A,sys_user B WHERE A.USER_ID=B.ID");
         return daoCtl.listPageJsonSql(dao, sql, curPage, pageSize, daoCtl.getIntRowValue(dao, sql1));
     }
 
