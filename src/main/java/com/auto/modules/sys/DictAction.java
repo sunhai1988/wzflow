@@ -173,7 +173,7 @@ public class DictAction extends BaseAction {
         boolean res = false;
         try {
             for (int i = 0; i < ids.length; i++) {
-                Sql sql = Sqls.create("update Sys_dict set location =" + (i) + " where id like '" + id + "%' and id=" + ids[i]);
+                Sql sql = Sqls.create("update sys_dict set location =" + (i) + " where id like '" + id + "%' and id=" + ids[i]);
                 dao.execute(sql);
             }
             res = true;
