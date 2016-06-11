@@ -36,6 +36,15 @@ public class Globals extends BaseAction {
     //文件池
     public static FilePool FILE_POOL;
     public static Map<String,NutDao> FORM_DAO=new HashMap<String,NutDao>();
+    /**
+     * cloudinary 参数配置
+     * */
+    public static String CLOUD_NAME = "dmggauuju";
+    public static String API_KEY = "725621718782826";
+    public static String API_SECRET = "pIv1tLDcSesJfF-xD7r6nVvlidM";
+    public static String ENVIRONMENT_VARIABLE = "CLOUDINARY_URL=cloudinary://725621718782826:pIv1tLDcSesJfF-xD7r6nVvlidM@dmggauuju";
+    
+    
 
     public static void InitNutDaoMap(Dao dao) {
         try {

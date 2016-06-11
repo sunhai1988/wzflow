@@ -22,7 +22,7 @@ public class DBObject {
 		String result = "";
 		try
 		{
-			String str_Clob = "";
+			/*String str_Clob = "";
 			StringBuffer strBuffer_CLob = new StringBuffer();
 			strBuffer_CLob.append("");
 			oracle.sql.CLOB clob = (oracle.sql.CLOB) rs.getClob(colnumName);
@@ -32,7 +32,7 @@ public class DBObject {
 				strBuffer_CLob.append(str_Clob + "\n");
 			}
 			in.close();
-			result = strBuffer_CLob.toString();
+			result = strBuffer_CLob.toString();*/
 		}
 		catch (Exception e)
 		{
