@@ -1,7 +1,10 @@
 package com.auto.modules.sys.bean;
 
-import org.nutz.dao.DB;
-import org.nutz.dao.entity.annotation.*;
+import org.nutz.dao.entity.annotation.ColDefine;
+import org.nutz.dao.entity.annotation.ColType;
+import org.nutz.dao.entity.annotation.Column;
+import org.nutz.dao.entity.annotation.Id;
+import org.nutz.dao.entity.annotation.Table;
 
 /**
  * @author Wizzer.cn
